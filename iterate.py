@@ -26,5 +26,14 @@ while(count< len(movies)):
 print(movies[4][1][3]) # will print Eric Idle
 
 
+# function definition
+
+def print_line(the_list):
+    for each_item in the_list:
+        if isinstance(each_item,list):
+            print_line(each_item)
+        else:
+            print(each_item)
 
 
+print_line(movies)
