@@ -37,3 +37,17 @@ def print_line(the_list):
 
 
 print_line(movies)
+
+
+# function definition
+
+def print_line(the_list):
+    for each_item in the_list:
+        if isinstance(each_item,list):
+            print_line(each_item)
+        else:
+            print(each_item)
+
+
+print_line(movies)
+
